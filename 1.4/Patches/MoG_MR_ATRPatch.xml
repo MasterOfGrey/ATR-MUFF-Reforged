@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+	<!-- Patches to use ATR features for MUFF Reforged -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Android Tiers Reforged</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Add Reforged MUFF Unit to the mechanical surgery recipeUsers to get all appropriate surgeries. -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="ATR_surgeryMechanical"]/recipeUsers</xpath>
+					<value>
+						<li>ATR_DronePlasMUFF</li>
+					</value>
+				</li>
+				
+				<!-- Adding MUFF to the caravans of incoming mechanical traders. -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="ATR_AndroidUnion"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+						<value>
+							<ATR_DronePlasMUFF>4</ATR_DronePlasMUFF>
+						</value>
+				</li>
+
+			<!-- Patch Drones -->
+				<!-- Buff ATR_DroneTORT so it's not totally left behind while still approaching something reasonable for classic MUFF. -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ATR_DroneTORT"]/race/baseBodySize</xpath>
+					<value>
+						<baseBodySize>3.2</baseBodySize>
+					</value></li>
+			
+			</operations>
+		</match>
+	</Operation>
+    
+
+</Patch>
