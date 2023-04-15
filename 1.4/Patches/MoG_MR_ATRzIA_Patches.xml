@@ -33,7 +33,7 @@
 								<defName>ATR_MultiUtilityMimetics</defName>
 								<label>Multi-utility mimetics</label>
 								<tab>ATR_MechResearch</tab>
-								<description>Biomimetics incorporating advanced synthesis technologies allow for those determined, or perhaps insane, enough to leave spacer society for a rimworld to</description>
+								<description>Biomimetics incorporating advanced synthesis technologies allow for those determined, or perhaps insane, enough to leave spacer society for a rimworld to have access to certain luxuries of home.</description>
 								<baseCost>1400</baseCost>
 								<techLevel>Spacer</techLevel>
 								<prerequisites>
