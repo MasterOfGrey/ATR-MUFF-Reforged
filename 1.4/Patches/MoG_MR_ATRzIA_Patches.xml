@@ -24,27 +24,6 @@
 			<match Class="PatchOperationSequence">
 				<!-- IA Patches (after checking to be doubly sure that IA is in fact loaded and no funny business is afoot) -->
 				<operations>
-					<!-- New Techs that only exist within the expanded research tree. -->
-					<!-- ATR_MultiUtilityMimetics -->
-					<li Class="PatchOperationAdd">
-						<xpath>Defs</xpath>
-						<value>
-							<ResearchProjectDef>
-								<defName>ATR_MultiUtilityMimetics</defName>
-								<label>Multi-utility mimetics</label>
-								<tab>ATR_MechResearch</tab>
-								<description>Biomimetics incorporating advanced synthesis technologies allow for those determined, or perhaps insane, enough to leave spacer society for a rimworld to have access to certain luxuries of home.</description>
-								<baseCost>1400</baseCost>
-								<techLevel>Spacer</techLevel>
-								<prerequisites>
-									<li>ATR_SpacerSynthesisTechniques</li>
-									<li>ATR_MilitaryBiomimetics</li>
-								</prerequisites>
-								<researchViewX>8.00</researchViewX>
-								<researchViewY>0.85</researchViewY>
-							</ResearchProjectDef>
-						</value></li>
-					
 					<!-- ATR_DronePlasMUFF -->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName="ATR_DronePlasMUFF"]/description</xpath>
